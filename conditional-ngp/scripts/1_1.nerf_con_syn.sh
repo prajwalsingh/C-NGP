@@ -1,0 +1,33 @@
+python train.py \
+    --root_dir ../../../dataset/nerf_synthetic/ \
+    --exp_name all_1_t19_chair_drums_ficus_hotdog_lego_materials_mic_ship_8192rays_2000itr_512cb_f4 \
+    --scene_name conditional_synth \
+    --scene_lst chair drums ficus hotdog lego materials mic ship \
+    --batch_size=14000 \
+    --dataset_name=nerf \
+    --hashtsize=19 \
+    --hashfeatsize=4 \
+    --check_val=30 \
+    --free_nerf_per=0 \
+    --distortion_loss_w=1e-2 \
+    --smoothness_loss_w=0 \
+    --num_epochs=30 \
+    --camera_batch_size=1024 \
+    --lr 2e-3
+
+python train.py \
+    --root_dir ../../../dataset/nerf_synthetic/ \
+    --exp_name all_1_t19_drums_chair_ficus_hotdog_lego_materials_mic_ship_8192rays_2000itr_512cb_f4 \
+    --scene_name conditional_synth \
+    --scene_lst drums chair ficus hotdog lego materials mic ship \
+    --batch_size=14000 \
+    --dataset_name=nerf \
+    --hashtsize=19 \
+    --hashfeatsize=4 \
+    --check_val=30 \
+    --free_nerf_per=0 \
+    --distortion_loss_w=1e-2 \
+    --smoothness_loss_w=0 \
+    --num_epochs=30 \
+    --camera_batch_size=1024 \
+    --lr 2e-3

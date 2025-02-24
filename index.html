@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-NGP: Exploring Multi-Scene Modelling Via Continual Neural Graphics Primitives</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Create this stylesheet for styling -->
+</head>
+<body>
+    <header>
+        <h1>C-NGP: Exploring Multi-Scene Modelling Via Continual Neural Graphics Primitives</h1>
+    </header>
+
+    <div style="text-align:center;">
+        <a href="https://anonymous.4open.science/r/C-3-NeRF/README.md" target="_blank">
+            <image src="docs/code.png" style="width:50px; height:50px; border-radius: 50%;"/>
+            <p style="margin: 0px 0 0 0; font-size: 15px; font-weight: bold;"><\Code></p>
+        </a>
+    </div>
+
+    <!-- Center align the images -->
+    <table width="100%" style="border-spacing: 0; text-align: center;">
+        <!-- <tr><th></th></tr> -->
+        <tr><th></th></tr>
+        <tr><th></th></tr>
+        <!-- <tr><th></th></tr> -->
+        <tr>
+            <!-- <td></td> -->
+            <td>
+                <img src="results/mixscene.gif" style="width:300px; height:300px; margin: 0 auto;"/>
+            </td>
+            <td>
+                <img src="results/tanksandtemple.gif" style="width:300px; height:300px; margin: 0 auto;"/>
+            </td>
+            <!-- <td></td> -->
+        </tr>
+    </table>
+
+    <section id="overview">
+        <h2>Abstract</h2>
+            <p align="justify">Neural radiance fields (NeRF) have revolutionized photorealistic rendering of novel views for single 3D scenes. Despite their growing popularity and efficiency as 3D resources, NeRFs face scalability challenges due to the need for separate models per scene and a linear increase in training time with each new scene. The potential for incrementally encoding multiple 3D scenes into a single NeRF model remains largely unexplored. We address this gap by introducing C-NGP (Continual-Neural Graphics Primitive), a novel continual learning framework that integrates multiple scenes incrementally into a single neural radiance field. Using a generative replay approach, C-NGP adapts to new scenes without requiring access to old data. We demonstrate the proposed framework's effectiveness in accommodating multiple scenes through comprehensive evaluations of synthetic and real datasets, producing high-quality novel-view renderings without additional parameters. Furthermore, we show the application of C-NGP in style editing, where the proposed framework stores multiple edit styles in the same network. Our supplementary materials provide implementation details and dynamic visualizations of the results.</p>
+    </section>
+
+    <section id="framework">
+        <h2>Framework</h2>
+            <img src="results/c3ngp_teaser.png" style="width:100%;"/>
+    </section>
+
+    <section id="conditional-architecture">
+        <h2>Conditional modification to NGP</h2>
+        <p style="text-align:center;"><img src="results/cclngp_architecture.png" style="width:400px; height:400px;"/></p>
+    </section>
+
+    <section id="comparision">
+        <h2>Comparision with other methods</h2>
+        <p style="text-align:center;"><img src="results/qualitative_comparison_nerfsynth.png" style="width:100%;"/></p>
+        <p style="text-align:center;"><img src="results/qualitative_comparison_llff.png" style="width:100%;"/></p>
+    </section>
+
+    <section id="multistylengp">
+        <h2>Style Editing</h2>
+        <p style="text-align:center;"><img src="results/multistylengp.png" style="width:668px; height:400px;"/></p>
+    </section>
+
+    <section id="results">
+        <h2>Gallery</h2>
+            
+        <table class="gallery-table">
+            <tr>
+                <td colspan="3"><p><b>NeRF Synthetic 360<sup>°</sup></b></p></td>
+            </tr>
+            <tr>
+                <td><img src="results/gif/chair.gif" style="width:300px; height:300px;" alt="Gallery Image 1"> <p>Chair</p> </td>
+                <td><img src="results/gif/lego.gif" style="width:300px; height:300px;" alt="Gallery Image 2"> <p>Lego</p> </td>
+            </tr>
+            <tr>
+                <td><img src="results/gif/hotdog.gif" style="width:300px; height:300px;" alt="Gallery Image 3"> <p>Hotdog</p> </td>
+                <td><img src="results/gif/ficus.gif" style="width:300px; height:300px;" alt="Gallery Image 4"> <p>Ficus</p> </td>
+            </tr>
+        </table>
+
+        <table class="gallery-table">
+            <tr>
+                <td colspan="3"><p><b>Real Forward Facing (LLFF)</b></p></td>
+            </tr>
+            <tr>
+                <td><img src="results/gif/flower.gif" style="width:340px; height:255px;" alt="Gallery Image 1"> <p>Flower</p> </td>
+                <td><img src="results/gif/horns.gif" style="width:340px; height:255px;" alt="Gallery Image 2"> <p>Horns</p> </td>
+            </tr>
+            <tr>
+                <td><img src="results/gif/trex.gif" style="width:340px; height:255px;" alt="Gallery Image 3"> <p>Trex</p> </td>
+                <td><img src="results/gif/leaves.gif" style="width:340px; height:255px;" alt="Gallery Image 4"> <p>Leaves</p> </td>
+            </tr>
+        </table>
+        
+        <table class="gallery-table">
+            <tr>
+                <td colspan="2"><p><b>Tanks and Temple Dataset</b></p></td>
+            </tr>
+            <tr>
+                <td><img src="results/gif/barn.gif" style="width:486px; height:273px;" alt="Gallery Image 5"> <p>Barn</p> </td>
+                <td><img src="results/gif/caterpillar.gif" style="width:486px; height:273px;" alt="Gallery Image 6"> <p>Caterpillar</p> </td>
+            </tr>
+            <tr>
+                <td><img src="results/gif/family.gif" style="width:486px; height:273px;" alt="Gallery Image 7"> <p>Family</p> </td>
+                <td><img src="results/gif/truck.gif" style="width:486px; height:273px;" alt="Gallery Image 8"> <p>Truck</p> </td>
+            </tr>
+            <tr>
+                <td colspan="2"><p>Note: The spiral motion is causing a ghosting or blurry effect in the case of the Tanks and Temple dataset.</p></td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>

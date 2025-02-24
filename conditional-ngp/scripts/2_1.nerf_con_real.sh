@@ -1,0 +1,17 @@
+python train.py \
+    --root_dir ../../../dataset/nerf_llff_data/fern \
+    --exp_name all_1_fern_flower_fortress_horns_leaves_orchids_room_trex_bs8192_cb512_ht19_f2_sc1_depth4 \
+    --scene_name real_llff \
+    --scene_lst fern flower fortress horns leaves orchids room trex\
+    --batch_size=8192 \
+    --dataset_name=colmap \
+    --hashtsize=19 \
+    --hashfeatsize=4 \
+    --check_val=30 \
+    --free_nerf_per=0 \
+    --distortion_loss_w=0 \
+    --smoothness_loss_w=0 \
+    --num_epochs=30 \
+    --downsample=0.25 \
+    --scale=2.0 \
+    --camera_batch_size=512

@@ -1,0 +1,39 @@
+python train.py \
+    --root_dir ../../../dataset/mix_nerf_blender/ship \
+    --exp_name ship \
+    --scene_name continual_learning_nerf_synth_val_c4 \
+    --scene_lst ship \
+    --batch_size=14000 \
+    --dataset_name=nerf \
+    --class_idx 1 \
+    --hashtsize=19 \
+    --hashfeatsize=4 \
+    --check_val=30 \
+    --free_nerf_per=0 \
+    --distortion_loss_w=1e-2 \
+    --smoothness_loss_w=0 \
+    --num_epochs=30 \
+    --camera_batch_size=1024 \
+    --lr 2e-3 \
+    --val_only \
+    --ckpt_path "./ckpts/nerf/continual_learning_nerf_synth_c4/conti_4_ship_ficus/epoch=29.ckpt"
+
+python train.py \
+    --root_dir ../../../dataset/mix_nerf_blender/ficus \
+    --exp_name ficus \
+    --scene_name continual_learning_nerf_synth_val_c4 \
+    --scene_lst ficus \
+    --batch_size=14000 \
+    --dataset_name=nerf \
+    --class_idx 2 \
+    --hashtsize=19 \
+    --hashfeatsize=4 \
+    --check_val=30 \
+    --free_nerf_per=0 \
+    --distortion_loss_w=1e-2 \
+    --smoothness_loss_w=0 \
+    --num_epochs=30 \
+    --camera_batch_size=1024 \
+    --lr 2e-3 \
+    --val_only \
+    --ckpt_path "./ckpts/nerf/continual_learning_nerf_synth_c4/conti_4_ship_ficus/epoch=29.ckpt"
