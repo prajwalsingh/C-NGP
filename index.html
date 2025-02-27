@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C-NGP: Exploring Multi-Scene Modelling Via Continual Neural Graphics Primitives</title>
+    <title>Incremental Multi-Scene Modelling via Continual Neural Graphics Primitives</title>
     <link rel="stylesheet" href="styles.css"> <!-- Create this stylesheet for styling -->
 </head>
 <body>
     <header>
-        <h1>C-NGP: Exploring Multi-Scene Modelling Via Continual Neural Graphics Primitives</h1>
+        <h1>Incremental Multi-Scene Modelling via Continual Neural Graphics Primitives</h1>
     </header>
 
     <div style="text-align:center;">
@@ -38,7 +38,7 @@
 
     <section id="overview">
         <h2>Abstract</h2>
-            <p align="justify">Neural radiance fields (NeRF) have revolutionized photorealistic rendering of novel views for single 3D scenes. Despite their growing popularity and efficiency as 3D resources, NeRFs face scalability challenges due to the need for separate models per scene and a linear increase in training time with each new scene. The potential for incrementally encoding multiple 3D scenes into a single NeRF model remains largely unexplored. We address this gap by introducing C-NGP (Continual-Neural Graphics Primitive), a novel continual learning framework that integrates multiple scenes incrementally into a single neural radiance field. Using a generative replay approach, C-NGP adapts to new scenes without requiring access to old data. We demonstrate the proposed framework's effectiveness in accommodating multiple scenes through comprehensive evaluations of synthetic and real datasets, producing high-quality novel-view renderings without additional parameters. Furthermore, we show the application of C-NGP in style editing, where the proposed framework stores multiple edit styles in the same network. Our supplementary materials provide implementation details and dynamic visualizations of the results.</p>
+            <p align="justify">Neural radiance fields (NeRF) have revolutionized photorealistic rendering of novel views for single 3D scenes. Despite their growing popularity and efficiency as 3D resources, NeRFs face scalability challenges due to the need for separate models per scene and the cumulative increase in training time for multiple scenes. The potential for incrementally encoding multiple 3D scenes into a single NeRF model remains largely unexplored. We address this gap by introducing Continual-Neural Graphics Primitives (C-NGP), a novel continual learning framework that integrates multiple scenes incrementally into a single neural radiance field. Using a generative replay approach, C-NGP adapts to new scenes without requiring access to old data. We demonstrate the proposed framework's effectiveness in accommodating multiple scenes through comprehensive evaluations of synthetic and real datasets, producing high-quality novel-view renderings without additional parameters. Furthermore, we show the application of C-NGP in style editing \textit{i.e.} multiple edit styles in the same network. Our supplementary material provides implementation details and dynamic visualizations of the results.</p>
     </section>
 
     <section id="framework">
