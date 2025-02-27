@@ -1,4 +1,4 @@
-<h2 style="text-align:center;"> C-NGP: Exploring Multi-Scene Modelling Via Continual Neural Graphics Primitives </h2> 
+<h2 style="text-align:center;"> Incremental Multi-Scene Modelling via Continual Neural Graphics Primitives </h2> 
 <p>[Paper] &nbsp;&nbsp; <a href="https://anonymous.4open.science/w/C-NGP/">[Website]</a></p>
 
 <br/>
