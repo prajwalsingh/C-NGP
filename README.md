@@ -1,4 +1,4 @@
-<h2 style="text-align:center;"> Incremental Multi-Scene Modelling via Continual Neural Graphics Primitives </h2> 
+<h2 style="text-align:center;"> Incremental Multi-Scene Modelling via Continual Neural Graphics Primitives [BMVC 2025] </h2> 
 <p> <a href="https://arxiv.org/pdf/2411.19903">[Paper]</a> &nbsp;&nbsp; <a href="https://prajwalsingh.github.io/C-NGP/">[Website]</a></p>
 
 <br/>
