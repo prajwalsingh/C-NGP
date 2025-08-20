@@ -1,5 +1,5 @@
 <h2 style="text-align:center;"> Incremental Multi-Scene Modelling via Continual Neural Graphics Primitives </h2> 
-<p>[Paper] &nbsp;&nbsp; <a href="https://anonymous.4open.science/w/C-NGP/">[Website]</a></p>
+<p> <a href="https://arxiv.org/pdf/2411.19903">[Paper]</a> &nbsp;&nbsp; <a href="https://prajwalsingh.github.io/C-NGP/">[Website]</a></p>
 
 <br/>
 
@@ -53,4 +53,14 @@
   [1] Müller, T., Evans, A., Schied, C., & Keller, A. (2022). Instant neural graphics primitives 
   with a multiresolution hash encoding. ACM transactions on graphics (TOG), 41(4), 1-15.
   [2] InstantNGP Pytorch Implementation: https://github.com/kwea123/ngp_pl]
+</pre>
+
+### Cite
+<pre>
+ @article{singh2024incremental,
+  title={Incremental Multi-Scene Modeling via Continual Neural Graphics Primitives},
+  author={Singh, Prajwal and Tiwari, Ashish and Vashishtha, Gautam and Raman, Shanmuganathan},
+  journal={arXiv preprint arXiv:2411.19903},
+  year={2024}
+}
 </pre>
